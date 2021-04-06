@@ -15,16 +15,11 @@ The app can be customized and use one of the following themes
 
 | theme name | screenshot |
 |---|---|
-| classic | <img alt="classic" src="https://github.com/fork-my-spoons/github-contributions.spoon/raw/main/screenshots/classic.png">
- |
-| dracula | <img alt="dracula" src="https://github.com/fork-my-spoons/github-contributions.spoon/raw/main/screenshots/dracula.png">
- |
-| leftpad | <img alt="leftpad" src="https://github.com/fork-my-spoons/github-contributions.spoon/raw/main/screenshots/leftpad.png">
- |
-| pink | <img alt="pink" src="https://github.com/fork-my-spoons/github-contributions.spoon/raw/main/screenshots/pink.png">
- |
-| teal | <img alt="teal" src="https://github.com/fork-my-spoons/github-contributions.spoon/raw/main/screenshots/teal.png">
-) |
+| classic | <img alt="classic" src="https://github.com/fork-my-spoons/github-contributions.spoon/raw/main/screenshots/classic.png">|
+| dracula | <img alt="dracula" src="https://github.com/fork-my-spoons/github-contributions.spoon/raw/main/screenshots/dracula.png">|
+| leftpad | <img alt="leftpad" src="https://github.com/fork-my-spoons/github-contributions.spoon/raw/main/screenshots/leftpad.png">|
+| pink | <img alt="pink" src="https://github.com/fork-my-spoons/github-contributions.spoon/raw/main/screenshots/pink.png">|
+| teal | <img alt="teal" src="https://github.com/fork-my-spoons/github-contributions.spoon/raw/main/screenshots/teal.png">|
 
 
 
