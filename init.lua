@@ -109,7 +109,7 @@ function obj:start()
                 self.color_levels[#self.color_levels + 1] = i
             end
 
-            for i = #self.color_levels - 5 - 6, #self.color_levels - 5 do
+            for i = #self.color_levels - 5 - 10, #self.color_levels - 5 -4  do
                 contributions_text = contributions_text 
                     .. hs.styledtext.new('●', { color = { hex = obj.color_mapping[self.theme][ self.color_levels[i] + 0 ] } } )
             end
