@@ -47,7 +47,7 @@ The app can be customized and use one of the following themes
    - Homebrew:
 
       ```brew install hammerspoon --cask```
- - download [github-contributions.spoon](https://github.com/fork-my-spoons/gitlab-merge-requests.spoon/releases/latest/download/github-contributions.spoon.zip), unzip and double click on a .spoon file. It will be installed under ~/.hammerspoon/Spoons folder.
+ - download [github-contributions.spoon](https://github.com/fork-my-spoons/github-contributions.spoon/releases/latest/download/github-contributions.spoon.zip), unzip and double click on a .spoon file. It will be installed under ~/.hammerspoon/Spoons folder.
  - open ~/.hammerspoon/init.lua and add the following snippet:
 
 ```lua
