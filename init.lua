@@ -91,7 +91,7 @@ function obj:setup(args)
     self.usernames = args.usernames
     self.username = args.usernames[1]
     self.theme = args.theme or 'standard'
-
+    self.char = args.char or '■'
 end
 
 function obj:start()
@@ -109,9 +109,9 @@ function obj:start()
                 self.color_levels[#self.color_levels + 1] = i
             end
 
-            for i = #self.color_levels - 5 - 10, #self.color_levels - 5 -4  do
+            for i = #self.color_levels - 5 - 6, #self.color_levels - 5 do
                 contributions_text = contributions_text 
-                    .. hs.styledtext.new('●', { color = { hex = obj.color_mapping[self.theme][ self.color_levels[i] + 0 ] } } )
+                    .. hs.styledtext.new(self.char, { color = { hex = obj.color_mapping[self.theme][ self.color_levels[i] + 0 ] } } )
             end
 
             self.indicator:setTitle(contributions_text)
