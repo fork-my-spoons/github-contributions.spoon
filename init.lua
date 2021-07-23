@@ -5,7 +5,7 @@ obj.__index = obj
 obj.name = "GitHub Contributions"
 obj.version = "1.0"
 obj.author = "Pavel Makhov"
-obj.homepage = "https://github.com/fork-my-spoons/take-a-break.spoon"
+obj.homepage = "https://github.com/fork-my-spoons/github-contributions.spoon"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
 
 obj.indicator = nil
@@ -157,12 +157,43 @@ function obj:start()
             end
 
             table.insert(self.menu, { title = 'Accounts', menu = accounts_menu})
+
+            table.insert(self.menu, { 
+                image = hs.image.imageFromName('NSTouchBarDownloadTemplate'), 
+                title = 'Check for updates', 
+                fn = function() obj:check_for_updates() end})
         end
 
         self.indicator:setMenu(self.menu)
 
     end)
     self.task:start()
+end
+
+function obj:check_for_updates()
+    local release_url = 'https://api.github.com/repos/fork-my-spoons/github-contributions.spoon/releases/latest'
+    hs.http.asyncGet(release_url, {}, function(status, body)
+        local latest_release = hs.json.decode(body)
+        latest = latest_release.tag_name:sub(2)
+        
+        if latest == obj.version then
+            hs.notify.new(function() end, {
+                autoWithdraw = false,
+                title = obj.name,
+                informativeText = "You have the latest version installed!"
+            }):send()
+        else
+            hs.notify.new(function() 
+                os.execute('open ' .. latest_release.assets[1].browser_download_url)
+            end, 
+            {
+                title = object.name,
+                informativeText = "New version is available",
+                actionButtonTitle = "Download",
+                hasActionButton = true
+            }):send()
+        end
+    end)
 end
 
 return obj
