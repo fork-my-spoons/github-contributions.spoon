@@ -25,9 +25,21 @@ When clicked it shows some information about the user:
 </p>
 
 
-## Themes
+## Customizations
 
-The app can be customized and use one of the following themes
+When creating a spoon you can customize how it looks like by passing optional parameters descibed below.
+
+### Icons
+
+You can change default square icon to any character, like 
+
+circle ('●'): <img alt="classic" src="https://github.com/fork-my-spoons/github-contributions.spoon/raw/main/screenshots/circles.png">
+
+star ('★'): <img alt="classic" src="https://github.com/fork-my-spoons/github-contributions.spoon/raw/main/screenshots/stars.png">
+
+### Themes
+
+You can also change colors of icons, by using one of the following color themes:
 
 | theme name | screenshot |
 |---|---|
@@ -55,7 +67,8 @@ The app can be customized and use one of the following themes
 hs.loadSpoon("github-contributions")
 spoon['github-contributions']:setup({
   usernames = {'streetturtle', 'fork-my-spoons', 'mgubaidullin'}, -- use on or multiple accounts
-  -- theme = 'pink'
+  -- theme = 'pink',
+  -- char = '★'
 })
 spoon['github-contributions']:start()
 ```
