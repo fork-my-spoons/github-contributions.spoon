@@ -66,7 +66,7 @@ You can also change colors of icons, by using one of the following color themes:
 -- github contributions
 hs.loadSpoon("github-contributions")
 spoon['github-contributions']:setup({
-  usernames = {'streetturtle', 'fork-my-spoons', 'mgubaidullin'}, -- use on or multiple accounts
+  usernames = {'streetturtle', 'fork-my-spoons', 'mgubaidullin'}, -- use one or multiple accounts
   -- theme = 'pink',
   -- char = '★'
 })
